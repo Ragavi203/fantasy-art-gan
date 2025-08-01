@@ -1,4 +1,4 @@
-# 🎨 Fantasy Art Generator
+# Fantasy Art Generator
 
 A deep learning project that generates fantasy artwork and characters using Generative Adversarial Networks (GANs). Create unique warriors, mages, dragons, landscapes, and more with the power of AI!
 
@@ -8,7 +8,7 @@ A deep learning project that generates fantasy artwork and characters using Gene
 
 > **Note**: This is a complete implementation ready for training. The project includes all components needed to train your own fantasy art generator, but pre-trained weights are not included due to file size constraints.
 
-## ✨ Features
+## Features
 
 - **8 Fantasy Categories**: Generate warriors, mages, archers, dragons, landscapes, castles, forests, and abstract art
 - **Conditional Generation**: Control what type of content to generate
@@ -17,7 +17,7 @@ A deep learning project that generates fantasy artwork and characters using Gene
 - **High Quality**: 256x256 resolution with option to scale to 512x512
 - **Fast Training**: Optimized for 1-2 day development cycle
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 fantasy-art-gan/
@@ -39,7 +39,7 @@ fantasy-art-gan/
 └── requirements.txt      # Python dependencies
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone and Setup
 
@@ -92,23 +92,16 @@ python3 training/train.py
 # Trained models saved in checkpoints/
 ```
 
-## 📸 Screenshots
+## Features Showcase
 
-<div align="center">
-  <img src="docs/interface_screenshot.png" alt="Web Interface" width="600">
-  <p><em>Interactive Gradio web interface for generating fantasy art</em></p>
-</div>
+- **8 Fantasy Categories**: Warriors, mages, archers, dragons, landscapes, castles, forests, abstract art
+- **Interactive Controls**: Real-time generation with style and randomness controls  
+- **Web Interface**: Beautiful Gradio interface that works in any browser
+- **Fast Training**: Optimized for quick experimentation and development
+- **Modular Design**: Easy to extend with new character types or art styles
+- **Progress Monitoring**: Visual training progress with sample generation
 
-## 🎯 Features Showcase
-
-- **🎨 8 Fantasy Categories**: Warriors, mages, archers, dragons, landscapes, castles, forests, abstract art
-- **🎛️ Interactive Controls**: Real-time generation with style and randomness controls  
-- **🖥️ Web Interface**: Beautiful Gradio interface that works in any browser
-- **⚡ Fast Training**: Optimized for quick experimentation and development
-- **🔧 Modular Design**: Easy to extend with new character types or art styles
-- **📊 Progress Monitoring**: Visual training progress with sample generation
-
-## 🎯 Usage Examples
+## Usage Examples
 
 ### Basic Generation
 ```python
@@ -142,7 +135,7 @@ art_styles = ["Realistic", "Anime", "Oil Painting", "Sketch"]
 character_types = ["Warrior", "Mage", "Dragon", "Your_New_Type"]
 ```
 
-## 🛠️ Technical Implementation
+## Technical Implementation
 
 ### Model Architecture
 - **Generator**: Deep Convolutional GAN (DCGAN) with conditional inputs
@@ -162,7 +155,7 @@ character_types = ["Warrior", "Mage", "Dragon", "Your_New_Type"]
 - **Batch Size**: 32 (configurable)
 - **Training Time**: 1-3 hours on modern GPU
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 fantasy-art-gan/
@@ -180,7 +173,7 @@ fantasy-art-gan/
 └── test_setup.py           # Setup verification script
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 Easily customize the training by modifying `training/train.py`:
 
@@ -194,7 +187,7 @@ config = {
 }
 ```
 
-## 🎮 Usage Examples
+## Usage Examples
 
 ### Programmatic Generation
 ```python
@@ -215,7 +208,7 @@ images = generator.generate_by_class(batch_size=4, class_name='warrior')
 3. Run `python3 training/prepare_data.py` to process them
 4. Start training with `python3 training/train.py`
 
-## 🚀 Performance & Results
+## Performance & Results
 
 ### Training Progress
 - **Epochs 1-10**: Basic shapes and color patterns emerge
@@ -228,15 +221,15 @@ images = generator.generate_by_class(batch_size=4, class_name='warrior')
 - **Recommended**: 16GB RAM, GPU with 8GB VRAM
 - **Training Time**: 1-3 hours (GPU) / 6-12 hours (CPU)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Here are some ideas:
 
-- **🎨 New art styles**: Add neural style transfer capabilities
-- **📸 Higher resolution**: Implement Progressive GAN for 512x512+ images  
-- **🎯 New categories**: Add more fantasy character types
-- **⚡ Performance**: Optimize training speed and memory usage
-- **🌐 Deployment**: Add Docker support or cloud deployment scripts
+- ** New art styles**: Add neural style transfer capabilities
+- ** Higher resolution**: Implement Progressive GAN for 512x512+ images  
+- ** New categories**: Add more fantasy character types
+- ** Performance**: Optimize training speed and memory usage
+- ** Deployment**: Add Docker support or cloud deployment scripts
 
 ### Development Setup
 1. Fork the repository
@@ -244,25 +237,6 @@ Contributions are welcome! Here are some ideas:
 3. Make your changes and test thoroughly
 4. Submit a pull request with a clear description
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **PyTorch Team**: For the excellent deep learning framework
-- **Gradio Team**: For making ML demos incredibly easy to create
-- **GAN Research Community**: For advancing generative modeling techniques
-- **Fantasy Art Community**: For inspiration and reference
-
-## 📞 Support
-
-- **🐛 Bug Reports**: Open an issue with a detailed description
-- **💡 Feature Requests**: Use GitHub Discussions to propose new features  
-- **❓ Questions**: Check existing issues or start a new discussion
-
----
-
-**⭐ Star this repository if you found it helpful!**
+**Star this repository if you found it helpful!**
 
 Built with ❤️ for the AI and fantasy art communities.
