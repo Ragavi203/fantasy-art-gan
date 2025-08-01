@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+fantasy-gan-env/
+
+# Large installers and downloads
+*.sh
+*.dmg
+*.pkg
+Miniconda3-latest-MacOSX-x86_64.sh
+
+# PyTorch models (these can be large)
+*.pth
+*.pt
+checkpoints/*.pth
+checkpoints/*.pt
+
+# Generated images and outputs
+outputs/*.png
+outputs/*.jpg
+outputs/*.jpeg
+
+# Keep directory structure but ignore contents
+!outputs/.gitkeep
+!checkpoints/.gitkeep
+
+# Data files (can be large)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+wandb/
+lightning_logs/
+
+# Temporary files
+*.tmp
+*.temp
